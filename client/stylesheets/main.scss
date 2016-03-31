@@ -5,3 +5,26 @@ body {
   font: 100% $font-stack;
   background: $primary-color;
 }
+
+.fa-spin {
+  font-size: 400px;
+}
+
+.fish-img {
+  height: 150px;
+  width: 150px;
+}
+
+.footer {
+  
+ }
+
+ .fish-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mycontainer {
+  margin-bottom: 10%;
+}
