@@ -1,3 +1,21 @@
+/*
+Index
+  FishApp
+    Fish Box
+      Toggler
+      Fish Form
+      Fish List Data
+        Fish List
+          Fish Card 
+    FishJumbotron
+    Loader
+  Welcome
+  Cookies
+  Bears
+  Beer
+*/
+
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var NavBar = require('./navbar');
