@@ -22,6 +22,7 @@ function FishList(props){
     var allFish = props.fishArray.map(item =>{
       return(
         <FishCard 
+          deleteFish={ props.deleteFish }
           getId={ props.getId }
           id={ item._id }
           key={ item._id }

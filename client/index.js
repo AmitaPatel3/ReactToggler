@@ -25,6 +25,7 @@ var Cookies = require('./cookies');
 var Bears = require('./bears');
 var FishApp = require('./FishApp')
 var Beer = require('./beer');
+var Notifier = require('./notifier');
 
 require('./stylesheets/main.scss')
 
@@ -62,16 +63,16 @@ var App = React.createClass({
 
   render: function() {
     return (
-      <div className=''>
-        <NavBar setActiveComponent={ this.setActiveComponent } />
-        <div>
-          {this.showWhichComponent()}
-        </div>  
-        <Footer/>     
-      </div>
+          <div className=''>
+            <Notifier>
+              <NavBar setActiveComponent={ this.setActiveComponent } />
+              { this.showWhichComponent() }
+              <Footer/> 
+            </Notifier>
+          </div>   
       )
     }
-  })
+  });
 
 ReactDOM.render(
   <App />, document.getElementById('app')
